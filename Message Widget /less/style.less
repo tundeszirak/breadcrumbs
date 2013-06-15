@@ -1,0 +1,144 @@
+/* Tünde Szirák
+   email: tundeszirak@gmail.com
+   http://github.com/Liliann
+   v0.2
+   License: MIT
+   The MIT License (MIT)
+
+	Copyright (c) 2013 Tünde Szirák
+
+	Permission is hereby granted, free of charge, to any person obtaining a copy
+	of this software and associated documentation files (the "Software"), to deal
+	in the Software without restriction, including without limitation the rights
+	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+	copies of the Software, and to permit persons to whom the Software is
+	furnished to do so, subject to the following conditions:
+
+	The above copyright notice and this permission notice shall be included in
+	all copies or substantial portions of the Software.
+
+	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+	THE SOFTWARE.
+*/
+
+@import "reset";
+@import "lesshat";
+
+body {
+	background-color: rgb(222, 223, 228);
+	color: #353547;
+	font-family: sans-serif;
+	font-size: 12px;
+}
+
+a {
+	color: #77737e;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #353547;
+}
+
+h1 {
+	font-size: 20px;
+}
+
+h1,
+.copyright-info {
+	margin: 15px 30px;
+	position: relative;
+	text-align: right;
+	z-index: 2;
+}
+
+/****************************************Project*********************************************/
+
+.container {
+	background: transparent url('../img/bgr.jpg') no-repeat;
+	bottom: 0;
+	height: 600px;
+	left: 0;
+	margin: auto;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 800px;
+	z-index: 1;
+}
+
+.profile-wrapper {
+	.border-radius (85px);
+	background: rgba(255, 255, 255, 0.26);
+	border-bottom: 2px solid rgba(0, 0, 0, 0.56);
+	border-top: 2px solid rgba(255, 255, 255, 0.47); 
+	color: white;
+	font-family: 'ProximaNova', sans-serif;
+	height: 170px;
+	left: 90px;
+	position: relative;
+	top: 218px;
+	width: 628px;
+	.user-picture {
+		.border-radius (75px);
+		border:5px solid white;
+		left: 11px;
+		position: relative;
+		top: 9px;
+		vertical-align: middle;
+	}
+	.user {
+		display: inline-block;
+		padding-left: 20px;
+		text-shadow: 1px 2px rgba(0, 0, 0, 0.32);
+		vertical-align: middle;
+		width: 315px;
+	}
+	.name {
+		font-size: 40px;
+
+	}
+	.location {
+		font-size: 26px;
+		font-weight: lighter;
+	}
+	.send-message-button {
+		.border-radius (55px);
+		background-color: rgba(0, 0, 0, 0.07);
+		border-bottom: 2px solid rgba(255, 255, 255, 0.46);
+		border-top: 2px solid rgba(0, 0, 0, 0.12);
+		bottom: -9px;
+		display: inline-block;
+		height: 110px;
+		position: relative;
+		vertical-align: middle;
+		width: 110px;
+		&:hover {
+			background-color: rgba(0, 0, 0, 0.11);
+			&:after {
+				background: url('../img/chat-button.png') no-repeat 18px 18px, linear-gradient(#8dcc56, rgb(107, 162, 58));
+			}
+		}
+		&:after {
+			.border-radius (47px);
+			.box-shadow (0px 1px 6px rgba(0, 0, 0, 0.23));
+			background: url('../img/chat-button.png') no-repeat 18px 18px, linear-gradient(rgba(141, 204, 86, 0.8), rgba(126, 185, 73, 0.8));
+			border-bottom:2px solid rgba(0, 0, 0, 0.2);
+			border-top: 2px solid rgba(255, 255, 255, 0.47);
+			content:"";
+			display: block;
+			height: 90px;
+			left:10px;
+			position: absolute;
+			top:8px;
+			width: 90px;
+		}
+	}
+}
+
+
