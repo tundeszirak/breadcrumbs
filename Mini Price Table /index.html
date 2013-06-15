@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+	<title>Mini Price Table</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			var $articles= $("article.col");
+			$articles.hover(function(e){
+				$articles.removeClass("highlight");
+				$(e.currentTarget).addClass("highlight");
+			})
+		})
+	</script>
+</head>
+<body>
+	<h1 class="copyright-info">Made by <a href="http://www.obsidianart.com/wp/tunde">T&uuml;nde Szir&aacute;k</a></h1>
+	<p class="copyright-info">from a design of <a href="http://dribbble.com/cosmin-negoita" target="_blank">Cosmin Negoita</a></p>
+	<div class="container">
+		<article class="col freeuser">
+			<a href="#">
+				<h2>0$</h2>
+				<h1>FREEUSER</h1>
+				<h3>GET</h3>
+			</a>
+		</article>
+		<article class="col highlight poweruser">
+			<a href="#">
+				<h2>20$</h2>
+				<h1>POWERUSER</h1>
+				<h3>BUY</h3>
+			</a>
+		</article>
+		<article class="col maduser">
+			<a href="#">
+				<h2>40$</h2>
+				<h1>MADUSER</h1>
+				<h3>BUY</h3>
+			</a>
+		</article>
+	</div>
+</body>
+</html>
