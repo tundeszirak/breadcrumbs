@@ -1,0 +1,193 @@
+/* Tünde Szirák
+   email: tundeszirak@gmail.com
+   http://github.com/Liliann
+   v0.2
+   License: MIT
+   The MIT License (MIT)
+
+	Copyright (c) 2013 Tünde Szirák
+
+	Permission is hereby granted, free of charge, to any person obtaining a copy
+	of this software and associated documentation files (the "Software"), to deal
+	in the Software without restriction, including without limitation the rights
+	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+	copies of the Software, and to permit persons to whom the Software is
+	furnished to do so, subject to the following conditions:
+
+	The above copyright notice and this permission notice shall be included in
+	all copies or substantial portions of the Software.
+
+	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+	THE SOFTWARE.
+*/
+
+@import "reset";
+@import "lesshat";
+
+//Button colors configuration
+@buttonStartBg:#65b927;
+@buttonEndBg:#4d9617;
+
+.clearfix {
+    zoom: 1;
+    &:before, &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+body {
+	background-color: rgb(67, 71, 73);
+}
+.made {
+	font-family: sans-serif;
+	font-size: 13px;
+	margin: 15px 30px;
+	position: relative;
+	text-align: right;
+	z-index: 2;
+	color: rgba(245, 245, 245, 0.76);
+	a {
+		color: rgba(245, 245, 245, 0.4);
+		text-decoration: none;
+		&:hover {
+			color: rgba(245, 245, 245, 0.76);		}
+	}
+}
+
+/****************************************Project*********************************************/
+.container {
+	margin: auto;
+	background-color: white;
+	position: relative;
+	width: 635px;
+	z-index: 1;
+	border: 10px solid rgba(175, 180, 177, 0.4);
+	padding: 40px;
+	font-family: "Georgia", serif;
+	font-size: 13px;
+	font-style: italic;
+	.title {
+		margin-bottom: 40px;
+		font-size: 28px;
+		font-family: 'PT Sans Narrow', sans-serif;
+		font-weight: bolder;
+		font-style: normal;
+	}
+	.col {
+		position: relative;
+		float: left; 
+		width: 153px;
+		height: 475px;
+		margin-bottom:50px;
+		img {
+			.box-shadow (0px 0px 10px #afb4b1);
+		}
+		.price {
+			background-color: white;
+			padding:10px 20px;
+			position: absolute;
+			top: 125px;
+			left: -12px;
+			color: #959696;
+			font-size: 18px;
+		}
+		p {
+			line-height: 22px;
+			text-align: justify;
+			border-top: 1px solid #b9d3df;
+			padding-top: 30px;
+			margin-top: 40px;
+		}
+		.button {
+			width: 150px;
+			height: 24px;
+			text-align: center;
+			background-color: #646565;
+			color: white;
+			padding-top: 12px;
+			padding-bottom: 12px;
+			margin-top: 50px;
+			position: absolute;
+			bottom: 0px;			
+			a {
+				text-decoration: none;
+				font-family: 'PT Sans Narrow', sans-serif;
+				font-style: normal;
+				font-size: 28px;
+				color: white;
+			}
+			&:hover {
+				.gradient (linear-gradient(@buttonStartBg, @buttonEndBg));
+				.box-shadow (0px 0px 2px black);
+			}
+		}
+		&.highlited {
+			width: 182px;
+			p {
+				border: none;
+				padding-top: 0px;
+				margin-top: 25px;
+			}
+			.most {
+				border-top: 1px solid #b9d3df;
+				padding-top: 12px;
+				font-size: 18px;
+				font-weight: bold;
+				margin-top: 42px;
+			}
+			.button {
+				width: 190px;
+				height: 30px;
+				.gradient (linear-gradient(@buttonStartBg, @buttonEndBg));
+				.box-shadow (0px 0px 2px black);
+				font-size: 30px;
+				margin-bottom: -4px;
+
+				&:hover {
+					.gradient (linear-gradient(lighten(@buttonStartBg,10%), lighten(@buttonEndBg,10%)));
+				};
+			}
+			.price {
+				font-size: 30px;
+				top: 140px;
+				left: -15px;
+				color: black;
+			}
+		}	
+	}
+	.divider {
+		.border-radius (50%);
+		width: 15px;
+		height: 15px;
+		padding: 5px;
+		float: left;
+		margin-right: 20px;
+		margin-left: 20px;
+		background-color: #bbbdbd;
+		color: white;
+		position: relative;
+		top: 200px;
+		&:before,
+		&:after {
+			content:"";
+			position: absolute;
+			background: transparent url("../img/dot.png") scroll repeat-y center center;
+			width:1px;
+			height:170px;
+			left:50%;
+		}
+		@dot-distance:53px;
+		&:before { top:@dot-distance; }
+		&:after  { bottom:@dot-distance; }
+	}
+}
+

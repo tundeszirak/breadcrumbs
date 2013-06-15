@@ -1,0 +1,334 @@
+/* Tünde Szirák
+   email: tundeszirak@gmail.com
+   http://github.com/Liliann
+   v0.2
+   License: MIT
+   The MIT License (MIT)
+
+	Copyright (c) 2013 Tünde Szirák
+
+	Permission is hereby granted, free of charge, to any person obtaining a copy
+	of this software and associated documentation files (the "Software"), to deal
+	in the Software without restriction, including without limitation the rights
+	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+	copies of the Software, and to permit persons to whom the Software is
+	furnished to do so, subject to the following conditions:
+
+	The above copyright notice and this permission notice shall be included in
+	all copies or substantial portions of the Software.
+
+	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+	THE SOFTWARE.
+*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+body {
+  background-color: #434749;
+}
+.made {
+  font-family: sans-serif;
+  font-size: 13px;
+  margin: 15px 30px;
+  position: relative;
+  text-align: right;
+  z-index: 2;
+  color: rgba(245, 245, 245, 0.76);
+}
+.made a {
+  color: rgba(245, 245, 245, 0.4);
+  text-decoration: none;
+}
+.made a:hover {
+  color: rgba(245, 245, 245, 0.76);
+}
+/****************************************Project*********************************************/
+.container {
+  margin: auto;
+  background-color: white;
+  position: relative;
+  width: 635px;
+  z-index: 1;
+  border: 10px solid rgba(175, 180, 177, 0.4);
+  padding: 40px;
+  font-family: "Georgia", serif;
+  font-size: 13px;
+  font-style: italic;
+}
+.container .title {
+  margin-bottom: 40px;
+  font-size: 28px;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: bolder;
+  font-style: normal;
+}
+.container .col {
+  position: relative;
+  float: left;
+  width: 153px;
+  height: 475px;
+  margin-bottom: 50px;
+}
+.container .col img {
+  -webkit-box-shadow: 0px 0px 10px #afb4b1;
+  -moz-box-shadow: 0px 0px 10px #afb4b1;
+  box-shadow: 0px 0px 10px #afb4b1;
+}
+.container .col .price {
+  background-color: white;
+  padding: 10px 20px;
+  position: absolute;
+  top: 125px;
+  left: -12px;
+  color: #959696;
+  font-size: 18px;
+}
+.container .col p {
+  line-height: 22px;
+  text-align: justify;
+  border-top: 1px solid #b9d3df;
+  padding-top: 30px;
+  margin-top: 40px;
+}
+.container .col .button {
+  width: 150px;
+  height: 24px;
+  text-align: center;
+  background-color: #646565;
+  color: white;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-top: 50px;
+  position: absolute;
+  bottom: 0px;
+}
+.container .col .button a {
+  text-decoration: none;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-style: normal;
+  font-size: 28px;
+  color: white;
+}
+.container .col .button:hover {
+  background-image: -moz-linear-gradient(#65b927, #4d9617);
+  background-image: -webkit-linear-gradient(#65b927, #4d9617);
+  background-image: -o-linear-gradient(#65b927, #4d9617);
+  background-image: linear-gradient(#65b927, #4d9617);
+  -webkit-box-shadow: 0px 0px 2px #000000;
+  -moz-box-shadow: 0px 0px 2px #000000;
+  box-shadow: 0px 0px 2px #000000;
+}
+.container .col.highlited {
+  width: 182px;
+}
+.container .col.highlited p {
+  border: none;
+  padding-top: 0px;
+  margin-top: 25px;
+}
+.container .col.highlited .most {
+  border-top: 1px solid #b9d3df;
+  padding-top: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 42px;
+}
+.container .col.highlited .button {
+  width: 190px;
+  height: 30px;
+  background-image: -moz-linear-gradient(#65b927, #4d9617);
+  background-image: -webkit-linear-gradient(#65b927, #4d9617);
+  background-image: -o-linear-gradient(#65b927, #4d9617);
+  background-image: linear-gradient(#65b927, #4d9617);
+  -webkit-box-shadow: 0px 0px 2px #000000;
+  -moz-box-shadow: 0px 0px 2px #000000;
+  box-shadow: 0px 0px 2px #000000;
+  font-size: 30px;
+  margin-bottom: -4px;
+}
+.container .col.highlited .button:hover {
+  background-image: -moz-linear-gradient(#7ed63d, #64c21e);
+  background-image: -webkit-linear-gradient(#7ed63d, #64c21e);
+  background-image: -o-linear-gradient(#7ed63d, #64c21e);
+  background-image: linear-gradient(#7ed63d, #64c21e);
+}
+.container .col.highlited .price {
+  font-size: 30px;
+  top: 140px;
+  left: -15px;
+  color: black;
+}
+.container .divider {
+  -webkit-border-radius: 50%;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 50%;
+  -moz-background-clip: padding;
+  border-radius: 50%;
+  background-clip: padding-box;
+  width: 15px;
+  height: 15px;
+  padding: 5px;
+  float: left;
+  margin-right: 20px;
+  margin-left: 20px;
+  background-color: #bbbdbd;
+  color: white;
+  position: relative;
+  top: 200px;
+}
+.container .divider:before,
+.container .divider:after {
+  content: "";
+  position: absolute;
+  background: transparent url("../img/dot.png") scroll repeat-y center center;
+  width: 1px;
+  height: 170px;
+  left: 50%;
+}
+.container .divider:before {
+  top: 53px;
+}
+.container .divider:after {
+  bottom: 53px;
+}
