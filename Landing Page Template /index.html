@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+	<title>Landing Page Template</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<h1>Made by <a href="http://www.obsidianart.com/wp/tunde">T&uuml;nde Szir&aacute;k</a></h1>
+	<p class="copyright-info">from a design of <a href="http://dribbble.com/jamesmcdonald" target="_blank">James McDonald</a></p>
+	<aside class="container">
+		<h1 class="logo">Timelaph</h1>
+		<form class="email-form" action="#">
+			<input class="email-placeholder" type="email" name="email" required = "required" placeholder="Enter your email address..." />
+			<input class="signup-button" type="submit" value="Sign Up" />
+		</form>
+		<p class="info">Our app isn&rsquo;t quite ready yet, however we&rsquo;re looking for beta testers to try it out before anyone else. Are you good at providing feedback and constructive criticism? You&rsquo;re the one for us. <a href="#">Sign up!</a></p>
+	</aside>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("form").on("submit",function(e){
+				$('<div class="thankyou">Thank you for subscribing!</div>').appendTo(e.currentTarget).hide().slideDown(600)
+				return false;
+			})
+		})
+	</script>
+</body>
+</html>

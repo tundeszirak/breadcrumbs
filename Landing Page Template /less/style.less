@@ -1,0 +1,137 @@
+/* Tünde Szirák
+   email: tundeszirak@gmail.com
+   http://github.com/Liliann
+   v0.2
+   License: MIT
+   The MIT License (MIT)
+
+	Copyright (c) 2013 Tünde Szirák
+
+	Permission is hereby granted, free of charge, to any person obtaining a copy
+	of this software and associated documentation files (the "Software"), to deal
+	in the Software without restriction, including without limitation the rights
+	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+	copies of the Software, and to permit persons to whom the Software is
+	furnished to do so, subject to the following conditions:
+
+	The above copyright notice and this permission notice shall be included in
+	all copies or substantial portions of the Software.
+
+	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+	THE SOFTWARE.
+*/
+
+@import "reset";
+@import "lesshat";
+
+body {
+	background-image: url("../img/bg.png");
+	color: rgb(139, 137, 137);
+	font-family: sans-serif;
+	font-size: 12px;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+	&:hover {
+		color: rgb(139, 137, 137);
+	}
+}
+ 
+h1 {
+	font-size: 20px;
+}
+
+h1,
+.copyright-info {
+	margin: 15px 30px;
+	position: relative;
+	text-align: right;
+	z-index: 2;
+}
+
+.container {
+	height: 200px;
+	margin: 0 auto;
+	padding-top: 60px;
+	width: 365px;
+	z-index: 1;
+	.logo {
+		color: white;
+		font-family: 'Helvetica Neue', Helvetica, sans-serif;
+		font-size: 50px;
+		font-weight: lighter;
+		margin: 20px auto 10px;
+		text-align: center;
+		text-shadow: 1px 1px 0px black;
+		&:before {
+			content: url("../img/o.png");
+			height: 40px;
+			margin-right: 10px;
+			margin-top: 3px;
+			width: 40px;
+		}
+	}
+	.email-placeholder {
+		.border-radius (5px);
+		.gradient(linear-gradient(rgba(255, 255, 255, 0.21),rgba(255, 255, 255, 0.10)));
+		background-color:transparent;
+		border: none;
+		border-top: 1px solid rgba(255, 255, 255, 0.3);
+		color: white;
+		font-size: 15px;
+		height: 38px;
+		margin-right: 10px;
+		outline-color: white;
+		text-indent: 10px;
+		text-shadow: 0px 1px 0px black;
+		width: 280px;
+	}
+	.email-form {
+		margin: 10px auto 20px;
+		position: relative;
+	}
+	.signup-button {
+		.border-radius (5px);
+		.gradient(linear-gradient(#ffae00, #ff5d00));
+		border: none;
+		border-top: 1px solid #ffd900;
+		color: white;
+		cursor: pointer;
+		font-size: 15px;
+		height: 38px;
+		text-shadow: 0px 1px 0px black;
+		width: 70px;
+	}
+	.info {
+		color: rgb(139, 137, 137);
+		font-size: 13px;
+		line-height: 1.4em;
+		text-align: justify;
+		a {
+			color: rgb(187, 182, 182);
+			&:hover {
+				color: white;
+			}
+		}
+	}
+	.thankyou {
+		background-image: url("../img/bg.png");
+		bottom: 0;
+		color: rgb(187, 182, 182);
+		font-size: 22px;
+		left: 0;
+		line-height: 42px;
+		position: absolute;
+		right: 0;
+		text-align: center;
+		top: 0;
+	}
+}
+
