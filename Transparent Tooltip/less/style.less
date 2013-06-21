@@ -1,0 +1,140 @@
+/* Tünde Szirák
+   email: tundeszirak@gmail.com
+   http://github.com/Liliann
+   v0.2
+   License: MIT
+   The MIT License (MIT)
+
+	Copyright (c) 2013 Tünde Szirák
+
+	Permission is hereby granted, free of charge, to any person obtaining a copy
+	of this software and associated documentation files (the "Software"), to deal
+	in the Software without restriction, including without limitation the rights
+	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+	copies of the Software, and to permit persons to whom the Software is
+	furnished to do so, subject to the following conditions:
+
+	The above copyright notice and this permission notice shall be included in
+	all copies or substantial portions of the Software.
+
+	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+	THE SOFTWARE.
+*/
+
+@import "reset";
+@import "lesshat";
+
+body {
+	font-family: sans-serif;
+	font-size: 12px;
+	background-color: rgb(68, 68, 68);
+}
+
+.made {
+	color: #babbbc;
+	font-family: sans-serif;
+	font-size: 13px;
+	margin: 15px 30px;
+	position: relative;
+	text-align: right;
+	z-index: 2;
+	a {
+		color: white;
+		text-decoration: none;
+		&:hover {
+			color: #babbbc;
+		}
+	}
+}
+
+/****************************************Project*********************************************/
+
+.container {
+	background: transparent url("../img/bg.png") repeat top left;
+	
+	margin: auto;
+	position: relative;
+	width: 700px;
+	z-index: 1;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.welcome-message {
+	font-size: 25px;
+	font-family: "helvetica Neue", sans-serif;
+	text-align: center;
+	padding-bottom: 20px;
+	color: rgba(0, 0, 0, 0.6);
+}
+.wrapper {
+	padding: 20px;
+	margin-left: 80px;
+	.avatar {
+		.box-shadow (0px 0px 6px #bdbebf);
+		.border-radius (50%);
+		border: 2px solid #bdbebf;
+		width: 80px;
+		height: 80px;
+		vertical-align: middle;
+		margin-right: 30px;
+	}	
+	.message{
+		.border-radius (4px);
+		display: inline-block;
+		background-color: rgba(255, 255, 255, 0.5);
+		padding: 15px;
+		vertical-align: middle;
+		font-size: 16px;
+		color: rgba(0, 0, 0, 0.7);
+		border: 1px solid transparent;
+		max-width: 350px;
+		line-height: 22px;
+		position: relative;
+		&:after {
+			content: '';
+			width: 0px;
+			height: 0px;
+			position: absolute;
+			border-bottom: 10px solid transparent;
+			border-top: 10px solid transparent;
+			border-right: 15px solid rgba(255, 255, 255, 0.5);
+			left: -15px;
+			top: 50%;
+			margin-top: -10px;
+		}
+		&:hover {
+			.box-shadow (0px 0px 6px #bdbebf);
+			border: 1px solid #babbbc;
+			background-color: rgba(255, 255, 255, 1);
+			&:after {
+				border-right-color: rgba(255, 255, 255, 1);
+			}
+			&:before {
+				content: '';
+				width: 0px;
+				height: 0px;
+				position: absolute;
+				border-bottom: 10px solid transparent;
+				border-top: 10px solid transparent;
+				border-right: 17px solid rgba(0, 0, 0, 0.5);
+				left: -17px;
+				top: 50%;
+				margin-top: -10px;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+

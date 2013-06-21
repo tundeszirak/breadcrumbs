@@ -1,0 +1,265 @@
+/* Tünde Szirák
+   email: tundeszirak@gmail.com
+   http://github.com/Liliann
+   v0.2
+   License: MIT
+   The MIT License (MIT)
+
+	Copyright (c) 2013 Tünde Szirák
+
+	Permission is hereby granted, free of charge, to any person obtaining a copy
+	of this software and associated documentation files (the "Software"), to deal
+	in the Software without restriction, including without limitation the rights
+	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+	copies of the Software, and to permit persons to whom the Software is
+	furnished to do so, subject to the following conditions:
+
+	The above copyright notice and this permission notice shall be included in
+	all copies or substantial portions of the Software.
+
+	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+	THE SOFTWARE.
+*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body {
+  font-family: sans-serif;
+  font-size: 12px;
+  background-color: #444444;
+}
+.made {
+  color: #babbbc;
+  font-family: sans-serif;
+  font-size: 13px;
+  margin: 15px 30px;
+  position: relative;
+  text-align: right;
+  z-index: 2;
+}
+.made a {
+  color: white;
+  text-decoration: none;
+}
+.made a:hover {
+  color: #babbbc;
+}
+/****************************************Project*********************************************/
+.container {
+  background: transparent url("../img/bg.png") repeat top left;
+  margin: auto;
+  position: relative;
+  width: 700px;
+  z-index: 1;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.welcome-message {
+  font-size: 25px;
+  font-family: "helvetica Neue", sans-serif;
+  text-align: center;
+  padding-bottom: 20px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.wrapper {
+  padding: 20px;
+  margin-left: 80px;
+}
+.wrapper .avatar {
+  -webkit-box-shadow: 0px 0px 6px #bdbebf;
+  -moz-box-shadow: 0px 0px 6px #bdbebf;
+  box-shadow: 0px 0px 6px #bdbebf;
+  -webkit-border-radius: 50%;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 50%;
+  -moz-background-clip: padding;
+  border-radius: 50%;
+  background-clip: padding-box;
+  border: 2px solid #bdbebf;
+  width: 80px;
+  height: 80px;
+  vertical-align: middle;
+  margin-right: 30px;
+}
+.wrapper .message {
+  -webkit-border-radius: 4px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 4px;
+  -moz-background-clip: padding;
+  border-radius: 4px;
+  background-clip: padding-box;
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 15px;
+  vertical-align: middle;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.7);
+  border: 1px solid transparent;
+  max-width: 350px;
+  line-height: 22px;
+  position: relative;
+}
+.wrapper .message:after {
+  content: '';
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-bottom: 10px solid transparent;
+  border-top: 10px solid transparent;
+  border-right: 15px solid rgba(255, 255, 255, 0.5);
+  left: -15px;
+  top: 50%;
+  margin-top: -10px;
+}
+.wrapper .message:hover {
+  -webkit-box-shadow: 0px 0px 6px #bdbebf;
+  -moz-box-shadow: 0px 0px 6px #bdbebf;
+  box-shadow: 0px 0px 6px #bdbebf;
+  border: 1px solid #babbbc;
+  background-color: #ffffff;
+}
+.wrapper .message:hover:after {
+  border-right-color: #ffffff;
+}
+.wrapper .message:hover:before {
+  content: '';
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-bottom: 10px solid transparent;
+  border-top: 10px solid transparent;
+  border-right: 17px solid rgba(0, 0, 0, 0.5);
+  left: -17px;
+  top: 50%;
+  margin-top: -10px;
+}
