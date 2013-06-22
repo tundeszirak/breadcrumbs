@@ -1,8 +1,34 @@
+/* Tünde Szirák
+   email: tundeszirak@gmail.com
+   http://github.com/Liliann
+   v0.2
+   License: MIT
+   The MIT License (MIT)
+
+	Copyright (c) 2013 Tünde Szirák
+
+	Permission is hereby granted, free of charge, to any person obtaining a copy
+	of this software and associated documentation files (the "Software"), to deal
+	in the Software without restriction, including without limitation the rights
+	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+	copies of the Software, and to permit persons to whom the Software is
+	furnished to do so, subject to the following conditions:
+
+	The above copyright notice and this permission notice shall be included in
+	all copies or substantial portions of the Software.
+
+	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+	THE SOFTWARE.
+*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-/* line 6, /Users/tundi/learning/365psd/Detailed Price Tag/target/less/reset.less */
 html,
 body,
 div,
@@ -92,7 +118,6 @@ video {
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-/* line 27, /Users/tundi/learning/365psd/Detailed Price Tag/target/less/reset.less */
 article,
 aside,
 details,
@@ -106,21 +131,17 @@ nav,
 section {
   display: block;
 }
-/* line 31, /Users/tundi/learning/365psd/Detailed Price Tag/target/less/reset.less */
 body {
   line-height: 1;
 }
-/* line 34, /Users/tundi/learning/365psd/Detailed Price Tag/target/less/reset.less */
 ol,
 ul {
   list-style: none;
 }
-/* line 37, /Users/tundi/learning/365psd/Detailed Price Tag/target/less/reset.less */
 blockquote,
 q {
   quotes: none;
 }
-/* line 40, /Users/tundi/learning/365psd/Detailed Price Tag/target/less/reset.less */
 blockquote:before,
 blockquote:after,
 q:before,
@@ -128,12 +149,10 @@ q:after {
   content: '';
   content: none;
 }
-/* line 45, /Users/tundi/learning/365psd/Detailed Price Tag/target/less/reset.less */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-/* line 4, /Users/tundi/learning/365psd/Detailed Price Tag/target/less/style.less */
 body {
   /*background-color: #282828;*/
 
@@ -141,20 +160,16 @@ body {
   font-size: 12px;
   color: #2c372e;
 }
-/* line 11, /Users/tundi/learning/365psd/Detailed Price Tag/target/less/style.less */
 a {
   text-decoration: none;
   color: #afb4b1;
 }
-/* line 16, /Users/tundi/learning/365psd/Detailed Price Tag/target/less/style.less */
 a:hover {
   color: #2c372e;
 }
-/* line 20, /Users/tundi/learning/365psd/Detailed Price Tag/target/less/style.less */
 h1 {
   font-size: 20px;
 }
-/* line 24, /Users/tundi/learning/365psd/Detailed Price Tag/target/less/style.less */
 h1,
 .copyright-info {
   margin-top: 15px;
@@ -164,7 +179,6 @@ h1,
   position: relative;
 }
 /****************************************Project*********************************************/
-/* line 35, /Users/tundi/learning/365psd/Detailed Price Tag/target/less/style.less */
 .container {
   width: 800px;
   height: 300px;
@@ -179,11 +193,9 @@ h1,
   position: relative;
   color: rgba(255, 255, 255, 0.9);
 }
-/* line 47, /Users/tundi/learning/365psd/Detailed Price Tag/target/less/style.less */
 .tag-wrapper {
   margin-bottom: 20px;
 }
-/* line 51, /Users/tundi/learning/365psd/Detailed Price Tag/target/less/style.less */
 .tag-wrapper {
   position: relative;
   background: transparent url("../img/tag.png") repeat-x 0 -95px;
@@ -192,7 +204,6 @@ h1,
   margin-left: auto;
   margin-right: auto;
 }
-/* line 58, /Users/tundi/learning/365psd/Detailed Price Tag/target/less/style.less */
 .tag-wrapper:after {
   content: "";
   background: transparent url("../img/tag.png") no-repeat top left;
@@ -202,7 +213,6 @@ h1,
   height: 90px;
   top: 0;
 }
-/* line 67, /Users/tundi/learning/365psd/Detailed Price Tag/target/less/style.less */
 .tag-wrapper:before {
   content: "";
   background: transparent url("../img/tag.png") no-repeat 0 -189px;
@@ -212,7 +222,6 @@ h1,
   height: 90px;
   top: 0;
 }
-/* line 76, /Users/tundi/learning/365psd/Detailed Price Tag/target/less/style.less */
 .tag-wrapper .price {
   -webkit-border-radius: 50%;
   -webkit-background-clip: padding-box;
@@ -234,7 +243,6 @@ h1,
   margin-left: 13px;
   margin-top: 10px;
 }
-/* line 86, /Users/tundi/learning/365psd/Detailed Price Tag/target/less/style.less */
 .tag-wrapper .price:after,
 .tag-wrapper .price:before {
   content: "";
@@ -245,15 +253,12 @@ h1,
   right: 0px;
   z-index: 2;
 }
-/* line 96, /Users/tundi/learning/365psd/Detailed Price Tag/target/less/style.less */
 .tag-wrapper .price:after {
   top: 5px;
 }
-/* line 99, /Users/tundi/learning/365psd/Detailed Price Tag/target/less/style.less */
 .tag-wrapper .price:before {
   top: 77px;
 }
-/* line 103, /Users/tundi/learning/365psd/Detailed Price Tag/target/less/style.less */
 .tag-wrapper .text {
   display: inline-block;
   text-align: center;
@@ -262,15 +267,13 @@ h1,
   text-shadow: -1px 1px 0px #000000;
   line-height: 23px;
   overflow: hidden;
-  width: 260px;
+  width: 258px;
 }
-/* line 112, /Users/tundi/learning/365psd/Detailed Price Tag/target/less/style.less */
 .tag-wrapper .text .main-text {
   font-family: "Calibri", sans-serif;
   font-size: 24px;
   text-transform: uppercase;
 }
-/* line 117, /Users/tundi/learning/365psd/Detailed Price Tag/target/less/style.less */
 .tag-wrapper .text .sub-text {
   font-family: "Cambria", serif;
   font-size: 14px;
@@ -278,7 +281,6 @@ h1,
   position: relative;
   display: inline-block;
 }
-/* line 123, /Users/tundi/learning/365psd/Detailed Price Tag/target/less/style.less */
 .tag-wrapper .text .sub-text:after,
 .tag-wrapper .text .sub-text:before {
   content: "";
@@ -290,27 +292,21 @@ h1,
   top: 13px;
   z-index: 2;
 }
-/* line 135, /Users/tundi/learning/365psd/Detailed Price Tag/target/less/style.less */
 .tag-wrapper .text .sub-text:before {
   left: -105px;
 }
-/* line 138, /Users/tundi/learning/365psd/Detailed Price Tag/target/less/style.less */
 .tag-wrapper .text .sub-text:after {
   right: -105px;
 }
-/* line 143, /Users/tundi/learning/365psd/Detailed Price Tag/target/less/style.less */
 .tag-wrapper.small {
   width: 230px;
 }
-/* line 145, /Users/tundi/learning/365psd/Detailed Price Tag/target/less/style.less */
 .tag-wrapper.small .text {
   width: 140px;
 }
-/* line 149, /Users/tundi/learning/365psd/Detailed Price Tag/target/less/style.less */
 .tag-wrapper.large {
   width: 500px;
 }
-/* line 151, /Users/tundi/learning/365psd/Detailed Price Tag/target/less/style.less */
 .tag-wrapper.large .text {
   width: 410px;
 }
